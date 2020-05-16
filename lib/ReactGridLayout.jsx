@@ -288,8 +288,8 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       x,
       y,
       isUserAction,
-      this.props.preventCollision,
-      compactType(this.props),
+      !(y === 17),
+      y === 17 ? "horizontal" : null,
       cols
     );
 
@@ -326,8 +326,8 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       x,
       y,
       isUserAction,
-      preventCollision,
-      compactType(this.props),
+      !(y === 17),
+      y === 17 ? "horizontal" : null,
       cols
     );
 
